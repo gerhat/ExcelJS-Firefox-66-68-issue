@@ -24,7 +24,19 @@ Error: Promise.resolve(...).finally is not a function` in red color printed.
 
 ![Firefox 66-68](./screenshots/ff66-68.png)
 
-**NOTE:** if you comment out line 6 (`import ExcelJS from 'exceljs';`) it works in Firefox 66-68
+**NOTE:** if you comment out line 6 of file `src/index.js` (i.e. `import ExcelJS from 'exceljs';`) it works in Firefox 66-68
+
+```javascript
+// src/index.js
+
+import 'core-js';
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+// Comment the line below and Promise.finally works
+import ExcelJS from 'exceljs';
+```
+
 
 ## License
 MIT
