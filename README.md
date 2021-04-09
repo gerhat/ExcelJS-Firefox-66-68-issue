@@ -15,11 +15,13 @@ $ npm start
 
 ## Chrome / Firefox 69+
 In Chrome and Firefox 69+ you should see the message `# Promise.finally works!` in green color printed.
+
 ![Chrome / Firefox 69+](./screenshots/chrome-ff69.png)
 
 ## Firefox 66-68
 In Firefox 66-68 you should see the message `# Promise.finally fails :-(
 Error: Promise.resolve(...).finally is not a function` in red color printed.
+
 ![Firefox 66-68](./screenshots/ff66-68.png)
 
 **NOTE:** if you comment out line 6 (`import ExcelJS from 'exceljs';`) it works in Firefox 66-68
